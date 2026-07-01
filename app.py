@@ -67,7 +67,7 @@ if st.button("Gerar Relatório do Cliente"):
         st.error("Preencha os trânsitos da semana e os dados do cliente.")
     else:
         with st.spinner("Cruzando dados do mapa com o céu atual..."):
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
             prompt = f"""
             Como um astrólogo profissional, cruze o céu atual que tem estes trânsitos: {transitos}, 
             com o mapa e momento deste cliente: Nome: {nome_cliente}. Detalhes: {dados_cliente}.
