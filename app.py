@@ -38,7 +38,7 @@ if st.button("Gerar Texto Semanal"):
         st.error("Por favor, digite os trânsitos da semana.")
     else:
         with st.spinner("Sintonizando com os astros..."):
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
             prompt = f"""
             Você é um astrólogo sênior e terapeuta esotérico focado em autoconhecimento de alta performance. 
             Com base nos seguintes trânsitos: {transitos}, e com o foco semanal em: {foco_semana}, 
